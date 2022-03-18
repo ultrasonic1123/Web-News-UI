@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang=vi>
+
+<head>
+    <title>News</title>
+    <link rel="stylesheet" href="CSS/mainSite.css" />
+    <script src="JavaScript/dateTime.js"></script>
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <div class="header" id="pin">
+        <ul>
+            <li><a  href="#"><img style="margin-top: 10px;" id="icon-news" src="Images/news-icon.png" alt="News icon" /></a></li>
+            <li>
+                <p id="date-time">DateTime</p>
+                <script>displayDatetime()</script>
+            </li>
+            <li>
+                <form class="search-form" action="" style="display: flex; margin-top: 10px;">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button style="width: 70px; text-align: center; margin-left: 5px;" type="submit">Search</button>
+                </form>
+            </li> 
+        </ul>
+        
+        
+            <div class="header-sign-in">
+                <a style="text-decoration: none; color: black;" href="##">
+                <div class="btn-create-post" style="background-color: #2196f3; padding: 5px;border: 1px solid #cfcfcf; border-radius: 5px; margin-right: 10px;">
+                    <span>Tạo tin của bạn</span>
+                    <i style="padding: 0px;" class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                </a>
+                <a style="text-decoration: none; color: black;" href="#">        
+                <div>
+                    <span>Đăng Nhập</span>
+                    <i style="background-color: rgb(111, 108, 104); border-radius: 50%;" class="fa fa-user" aria-hidden="true"></i>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="#">Thời sự</a>
+                <div class="sub-menu-bar">
+                    <ul>
+                        <li>Chính trị</li>
+                        <li>Giao thông</li>
+                        <li>Dân sinh</li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Góc nhìn</a></li>
+            <li><a href="#">Thế giới</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Kinh doanh</a></li>
+            <li><a href="#">Khoa học</a></li>
+            <li><a href="#">Giải trí</a></li>
+            <li><a href="#">Thể thao</a></li>
+            <li><a href="#">Pháp luật</a></li>
+        </ul>
+    </div>
+    <div class="news-content">
+        <div class="news-content-main" style="height:100%">
+            <h1 style="text-align: center;">Tin Nổi Bật!</h1>
+            <img src="Images/trang-an-ninh-binh.jpg" alt="" />
+            <h1 style="text-align: center;">Tràng An Ninh Bình</h1>
+            <div class="news-content-para">
+                <p>Tràng An Ninh Bình là một trong những khu du lịch đẹp nhất của Bắc bộ. Mọi thứ đẹp nhất ở đây được
+                    thiên nhiên ban tặng. Từ những dãy núi uốn lượn hùng vỹ, bao quanh là dòng nước trong vắt, ngồi trên
+                    thuyền mộc bạn sẽ được khám phá các hang động kỳ bí đến những cánh đồng lúa bên suối đẹp bình dị.
+                    Tất cả tạo nên một khung ảnh ảo mộng, đẹp như trong tranh cứ dần dần mở ra trước mắt.
+                    “Thả hồn theo nắng Tràng An Mái chèo gõ nhịp mênh mang dưới trời Non xanh, nước biếc đẹp tươi Nắng
+                    chùa, gió động…mây trời Tràng An Ra về, nỗi nhớ miên man Một tà áo tím lướt ngang đò mình…”</p>
+            </div>
+        </div>
+        <div class="list-news-content" style="width: 30%;">
+            <div class="sidebar-menu clearfix">
+                <a href="#">
+                    <h3>Tin mới</h3>
+                </a>
+                <a href="#">
+                    <h3>Đọc nhiều</h3>
+                </a>
+            </div>
+            <div class="grid-container-news">
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+                <div class="grid-news">
+                    <a href="#">
+                        <img src="Images/trang-an-ninh-binh.jpg">
+                        <p style="display:inline">news-1</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <h3>Tin Tức Giải Trí</h3>
+    <div class="under-news-grid">
+        <div class="under-news">
+            <h3>Title</h3>
+            <img src="Images/news-1.jpg" />
+            <p>News</p>
+        </div>
+        <div class="under-news">
+            <h3>Title</h3>
+            <img src="Images/news-2.jpg" />
+            <p>News</p>
+        </div>
+        <div class="under-news">
+            <h3>Title</h3>
+            <img src="Images/news-3.jpg" />
+            <p>News</p>
+        </div>
+        <div class="under-news">
+            <h3>Title</h3>
+            <img src="Images/news-4.jpg" />
+            <p>News</p>
+        </div>
+        <div class="under-news">
+            <h3>Title</h3>
+            <img src="Images/news-5.jpg" />
+            <p>News</p>
+        </div>
+        <div class="under-news">
+            <h3>Title</h3>
+            <img src="Images/news-6.jpg" />
+            <p>News</p>
+        </div>
+        <div class="under-news">
+            <h3>Title</h3>
+            <img src="Images/news-9.jpg" />
+            <p>News</p>
+        </div>
+        <div class="under-news">
+            <h3>Title</h3>
+            <img src="Images/news-8.jpg" />
+            <p>News</p>
+        </div>
+        <div class="under-news">
+            <h3>Title</h3>
+            <img src="Images/news-10.png" />
+            <p>News</p>
+        </div>
+    </div>
+    <div style="text-align: center;">
+    <p style="margin-top: 50px;">
+        <pre>
+    "Sự chuyên nghiệp của nghề báo nên là việc nói cho công chúng họ cần biết gì – chứ không phải điều họ muốn biết."
+    Walter Cronkite
+        </pre>
+        <div>
+            <a href="#pin"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        </div>
+    </p>
+    </div>  
+    <footer>
+        <div class="footer-container">
+            <div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+            <span>
+                <pre>
+                Báo tiếng Việt nhiều người xem nhất
+            Đồ án sinh viên trường Đại học Xây Dựng Hà Nội (HUCE)
+                Số giấy phép: xx/YY-ZZZZZ ngày 10/10/2021
+                </pre>
+            </span>
+            <div>
+                <h4>Contact to Post News</h3>
+                    <p>
+                    <pre>Email: huynuce00@gmail.com</pre>
+                    </p>
+                    <p>
+                    <pre>Phone: 09xxxxxxxx</pre>
+                    <p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

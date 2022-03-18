@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News</title>
+        <link rel="stylesheet" href="CSS/mainSite.css" />
+        <link rel="stylesheet" href="CSS/article.css">
+        <script src="JavaScript/dateTime.js"></script>
+        <link rel="apple-touch-icon" sizes="57x57" href="Favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="Favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="Favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="Favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="Favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="Favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="Favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="Favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="Favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="Favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="Favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!--icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <ul>
+                <li><a href="#"><img style="margin-top: 10px;" id="icon-news" src="Images/news-icon.png" alt="News icon" /></a></li>
+                <li>
+                    <p id="date-time">DateTime</p>
+                    <script>displayDatetime()</script>
+                </li>
+                <li>
+                    <form class="search-form" action="" style="margin-top: 10px;">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+            <a style="text-decoration: none; color: black;" href="#">
+                <div class="header-sign-in">
+                    <div style="background-color: #2196f3; padding: 5px;border: 1px solid #cfcfcf; border-radius: 5px; margin-right: 10px;">
+                        <span>Tạo tin của bạn</span>
+                        <i style="padding: 0px;" class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <span>Đăng Nhập</span>
+                        <i style="background-color: rgb(111, 108, 104); border-radius: 50%;" class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                </div>
+                </a>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#">Thời sự</a>
+                    <div class="sub-menu-bar">
+                        <ul>
+                            <li>Chính trị</li>
+                            <li>Giao thông</li>
+                            <li>Dân sinh</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Góc nhìn</a></li>
+                <li><a href="#">Thế giới</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Khoa học</a></li>
+                <li><a href="#">Giải trí</a></li>
+                <li><a href="#">Thể thao</a></li>
+                <li><a href="#">Pháp luật</a></li>
+            </ul>
+        </div>
+        <div class="article-content clearfix">
+            <h1 style="text-align: center;">TITLE</h1>
+            <p id="para1"></p>
+            <img class="clearfix" id="image1" src="" />
+            <p id="para1">
+                <pre>
+                <pre>
+            </p>
+            <img class="clearfix" id="image2" src="" />
+            <p id="para3"></p>
+            <img id="image3" src=""/>
+            <p id="para4"><p>
+        </div>
+        <div class="author">
+            <span style="position: relative; left: 650px;">-author-</span>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                </div>
+                <span>
+                    <pre>
+                    Báo tiếng Việt nhiều người xem nhất
+                Đồ án sinh viên trường Đại học Xây Dựng Hà Nội (HUCE)
+                    Số giấy phép: xx/YY-ZZZZZ ngày 10/10/2021
+                    </pre>
+                </span>
+                <div>
+                    <h4>Contact to Post News</h3><br/>
+                    <p><pre>Email: huynuce00@gmail.com</pre></p><br/>
+                    <p><pre>Phone: 09xxxxxxxx</pre><p><br/>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

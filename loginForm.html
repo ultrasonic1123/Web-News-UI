@@ -1,0 +1,101 @@
+<title>News</title>
+<link href='CSS/loginForm.css' rel='stylesheet' type='text/css'>
+<link rel="apple-touch-icon" sizes="57x57" href="Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
+    <link rel="manifest" href="Favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.login {
+    position: relative;
+    top: 50px;
+    left: 35%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    box-shadow: -20px 20px 40px grey;
+    font-family: 'Poppins', sans-serif;
+}
+.option {
+    display: flex;
+}
+.active {
+    padding: 5px;
+    background-color: rgb(196, 187, 187);
+}
+.nonactive {
+    background-color: white;
+}
+#signin, #signup {
+   font-family: 'Poppins', sans-serif;
+   cursor: pointer;
+}
+#signin {
+    margin-right: 20px;
+}
+img {
+    margin-top: 50px;
+    width: 250px;
+    height: auto;
+}
+span {
+    color: black;
+    
+}
+.signin {
+    margin-left: 30px;
+}
+</style>
+<div class="login">
+    <img src = "Images/news-icon.png"/>
+    <div class="option">
+        <h2 id ="signin" class="active">Sign in</h2></button>
+        <h2 id ="signup" class="nonactive">Sign up</h2>
+    </div>
+    <form>
+        <span>username: </span>
+        <input type="text" class="text" name="username" placeholder="username">
+        <br>
+        <br>
+        <span id="password">password: </span>
+        <input type="password" class="text" name="password" placeholder="********">
+        
+        <br>
+        <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" />
+        <label for="checkbox-1-1">keep me signed in</label>
+        <button class="signin">
+            Sign In
+        </button>
+        <hr>
+        <a href="#">Forgot password?</a>
+    </form>
+    <script>
+
+        setInterval(()=>{
+            b = document.getElementsByClassName('nonactive')[0];
+            b.addEventListener("click", toggleActive);
+            console.log(b);
+        },100);
+        function toggleActive() {
+            document.getElementsByClassName('nonactive')[0].className= 'a';
+            document.getElementsByClassName('active')[0].className = 'nonactive';
+            document.getElementsByClassName('a')[0].className = 'active';
+        }
+    </script>
+</div>

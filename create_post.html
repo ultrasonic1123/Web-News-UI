@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>News</title>
+        <script src="ckeditor/ckeditor/ckeditor.js" type="text/javascript"></script>
+        <script src="JavaScript/dateTime.js"></script>
+        <link href="css/mainSite.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            
+            body {
+                margin-left: 20px;
+            }
+            .post-container-heading h3, .post-title h4 , .post-description h4, .post-content h4, .post-thumb h4{
+                display: inline-block;
+                padding: 10px;
+                margin-top: 25px;
+                border-top: 1px solid #4f4f4f;
+                border-left: 1px solid #4f4f4f;
+                border-right: 1px solid #4f4f4f;
+                border-radius: 2px;
+            }
+            hr {
+                max-width: 300px;
+                margin-left: 0px;
+            }
+            .post-title, .post-description {
+                margin-top: 25px;
+            }
+            .post-title input {
+                display: block;
+                margin-top: 5px;
+                width: 70%;
+                height: 50px;
+            }
+            .post-description textarea{
+                margin-top: 5px;
+                display: block;
+                width: 70%;
+                height: 55px;
+            }
+            .post-content textarea {
+                display: block;
+                margin-top: 5px;
+            }
+            .side-bar {
+                float : right;
+                height: 700px;;
+                width: 200px;
+            }
+            .post-thumb input {
+                display: block;
+                margin-top: 5px;
+                width: 70%;
+                height: 25px;
+            }
+            .create-post {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <ul>
+                <li><a href="#"><img style="margin-top: 10px;;" id="icon-news" src="Images/news-icon.png" alt="News icon" /></a></li>
+                <li>
+                    <p id="date-time">DateTime</p>
+                    <script>displayDatetime()</script>
+                </li>
+                <li>
+                    <form class="search-form" action="" style="display: flex; margin-top: 10px;">
+                        <input  type="text" placeholder="Search.." name="search">
+                        <button style="width: 70px; text-align: center; margin-left: 5px;" type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+            <a style="text-decoration: none; color: black;"href="#"><div class = "header-sign-in"><span>Đăng Nhập</span><i style="background-color: rgb(111, 108, 104); border-radius: 50%;" class="fa fa-user" aria-hidden="true"></i></div></a>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#">Thời sự</a>
+                    <div class="sub-menu-bar">
+                        <ul>
+                            <li><a href="#">Chính trị</a></li>
+                            <li><a href="#">Giao thông</a></li>
+                            <li><a href="#">Dân sinh</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Góc nhìn</a></li>
+                <li><a href="#">Thế giới</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Khoa học</a></li>
+                <li><a href="#">Giải trí</a></li>
+                <li><a href="#">Thể thao</a></li>
+                <li><a href="#">Pháp luật</a></li>
+            </ul>
+        </div>
+    <div class="post-container">
+        <div class="post-container-heading"><h3>Bài viết của bạn</h3></div>
+            <hr/>
+        
+        <div class="post-title">
+            <h4>Tiêu đề bài viết</h4>
+            <input name="post-title" placeholder="Nhập tiêu đề bài viết..." type="text"/>
+        </div>
+        <div class="post-thumb">
+            <h4>Ảnh bài viết</h4>
+            <input class="link-thumb" placeholder="Link ảnh đại diện..." type="text"/>
+        </div>
+        <div class="post-description">
+            <h4>Tóm tắt nội dung</h4>
+            <textarea name="post-shorten-content" id="post-shorten-content" placeholder="Mô tả bài viết..."></textarea>
+        </div>
+        <div class="post-content">
+            <h4>Nội dung bài viết</h4>
+            <textarea name="editor" id="editor" placeholder="Nội dung bài viết..."></textarea>
+        </div>
+        <div class="create-post">
+            <h4></h4>
+            <button >Tạo Bài Viết<i style="padding: 0px;" class="fa fa-plus" aria-hidden="true"></i></button>
+        </div>
+    </div>
+        <script>
+           CKEDITOR.replace('editor');
+        </script>
+         <footer>
+            <div class="footer-container">
+                <div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                </div>
+                <span>
+                    <pre>
+                    Báo tiếng Việt nhiều người xem nhất
+                Đồ án sinh viên trường Đại học Xây Dựng Hà Nội (HUCE)
+                    Số giấy phép: xx/YY-ZZZZZ ngày 10/10/2021
+                    </pre>
+                </span>
+                <div>
+                    <h4>Contact to Post News</h3>
+                    <p><pre>Email: huynuce00@gmail.com</pre></p>
+                    <p><pre>Phone: 09xxxxxxxx</pre><p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
